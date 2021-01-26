@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="PcBuilder.MainScreenController">
+
+
+	<MenuBar prefHeight="20" prefWidth="800.0"
+		>
+		<menus>
+			<Menu mnemonicParsing="false" text="CPU's">
+				<items>
+					<MenuItem mnemonicParsing="false"
+						onAction="#showCpuSearchScreen" text="Search" />
+					<MenuItem mnemonicParsing="false"
+						onAction="#addCpuComponentScreen" text="Add New Cpu" />
+				</items>
+			</Menu>
+			<Menu mnemonicParsing="false" text="GPU's">
+				<items>
+					<MenuItem mnemonicParsing="false"
+						onAction="#showGpuSearchScreen" text="Search" />
+					<MenuItem mnemonicParsing="false"
+						onAction="#addGpuComponentScreen" text="Add New Gpu" />
+				</items>
+			</Menu>
+			<Menu mnemonicParsing="false" text="RAM">
+				<items>
+					<MenuItem mnemonicParsing="false"
+						onAction="#showRamSearchScreen" text="Search" />
+					<MenuItem mnemonicParsing="false"
+						onAction="#addRamComponentScreen" text="Add New RAM" />
+				</items>
+			</Menu>
+			<Menu mnemonicParsing="false" text="PSU's">
+				<items>
+					<MenuItem mnemonicParsing="false"
+						onAction="#showPsuSearchScreen" text="Search" />
+					<MenuItem mnemonicParsing="false"
+						onAction="#addPsuComponentScreen" text="Add New PSU" />
+				</items>
+			</Menu>
+			<Menu mnemonicParsing="false" text="Cases">
+				<items>
+					<MenuItem mnemonicParsing="false"
+						onAction="#showCaseSearchScreen" text="Search" />
+					<MenuItem mnemonicParsing="false"
+						onAction="#addCasComponentScreen" text="Add New Case" />
+				</items>
+			</Menu>
+			<Menu mnemonicParsing="false" text="Mainboards">
+				<items>
+					<MenuItem mnemonicParsing="false"
+						onAction="#showMainboardSearchScreen" text="Search" />
+					<MenuItem mnemonicParsing="false"
+						onAction="#addMaiComponentScreen" text="Add New Mainboard" />
+				</items>
+			</Menu>
+			<Menu mnemonicParsing="false" text="HDD's">
+				<items>
+					<MenuItem mnemonicParsing="false"
+						onAction="#showHddSearchScreen" text="Search" />
+					<MenuItem mnemonicParsing="false"
+						onAction="#addHddComponentScreen" text="Add New HDD" />
+				</items>
+			</Menu>
+		</menus>
+	</MenuBar>
+	<!-- TODO Add Nodes -->
+</AnchorPane>
+

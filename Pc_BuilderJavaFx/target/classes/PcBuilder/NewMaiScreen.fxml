@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PcBuilder.Controllers.NewMaiController">
+   <children>
+      <GridPane prefHeight="600.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="421.0" minWidth="10.0" prefWidth="400.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="478.0" minWidth="10.0" prefWidth="400.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+       
+         <children>
+          <fx:include fx:id="Menu1" source="Menu.fxml"/>
+            <Label text="Screen for adding new Mainboard Components" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Name" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <Label layoutX="373.0" layoutY="164.0" text="Price" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="maiNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="373.0" layoutY="231.0" text="Rating" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <Label layoutX="373.0" layoutY="298.0" text="Watts" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <Label layoutX="373.0" layoutY="365.0" text="Interfacename (harddisc)" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="maiPriceTextField" layoutX="436.0" layoutY="165.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="maiRatingTextField" layoutX="436.0" layoutY="232.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="maiWattsTextField" layoutX="436.0" layoutY="299.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="maiInterfaceNameTextField1" layoutX="436.0" layoutY="366.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#addMai" text="Add" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" />
+            <Button layoutX="391.0" layoutY="499.0" mnemonicParsing="false" onAction="#deleteMai" text="Delete" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" />
+            <TextField fx:id="maiInterfaceNameTextField2" layoutX="410.0" layoutY="323.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="maiInterfaceNameTextField3" layoutX="410.0" layoutY="373.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="maiInterfaceNameTextField4" layoutX="410.0" layoutY="423.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="maiInterfaceNameTextField5" layoutX="410.0" layoutY="437.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label layoutX="198.0" layoutY="298.0" text="Interfacename (size)" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <Label layoutX="236.0" layoutY="344.0" text="Interfacename (PCIe)" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <Label layoutX="230.0" layoutY="390.0" text="Interfacename (socket)" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <Label layoutX="214.0" layoutY="436.0" text="Interfacename (ram)" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
